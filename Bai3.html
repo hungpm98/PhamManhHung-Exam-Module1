@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function isFibonacci(n) {
+        let bl = false;
+        let number1 = Math.sqrt((5 * n * n) + 4);
+        let number2 = Math.sqrt((5 * n * n) - 4);
+        while (number1 > 0 && number1 % 1 === 0 || number2 > 0 && number2 % 1 === 0) {
+            bl = true;
+            break;
+        }
+        ;
+        if (bl === true) {
+            return n + " la so trong day fibonacci"
+        } else {
+            return n + " khong phai so trong day fibonacci"
+        }
+    }
+
+    let n = 12;
+    document.write(isFibonacci(n))
+
+
+</script>
+
+</body>
+</html>
